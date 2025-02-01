@@ -1,0 +1,50 @@
+.dashboard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 18px);
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 16px;
+  box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.22) inset;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      .avatar {
+        width: 32px;
+      }
+      .name {
+        font-size: 16px;
+        font-weight: 500;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 40vw;
+      }
+    }
+  }
+  .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+  }
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .progressBar {
+    margin-top: 12px;
+  }
+}

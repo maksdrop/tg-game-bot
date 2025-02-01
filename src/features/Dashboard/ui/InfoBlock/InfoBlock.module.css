@@ -1,0 +1,49 @@
+.infoBlock {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  .wrapperIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    .robotIcon {
+      width: 21px;
+    }
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    .count {
+      font-size: 14px;
+    }
+    .text {
+      font-size: 10px;
+      font-weight: 500;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+  &.s {
+    .wrapperIcon {
+      width: 32px;
+      height: 32px;
+    }
+    .info {
+      .count {
+        font-size: 14px;
+      }
+    }
+  }
+  &.m {
+    .wrapperIcon {
+      width: 36px;
+      height: 36px;
+    }
+    .info {
+      .count {
+        font-size: 14px;
+      }
+    }
+  }
+}

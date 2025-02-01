@@ -1,0 +1,50 @@
+.supply {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  width: 100%;
+  padding: 12px 8px 8px;
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-radius: 16px;
+  box-shadow: 0px 1px 3px 0px rgba(255, 255, 255, 0.22) inset;
+  .wrapperIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    background: rgba(34, 124, 231, 0.22);
+    border-radius: 15px;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    .icon {
+      width: 48px;
+    }
+  }
+  &.blue {
+    .wrapperIcon {
+      background: rgba(34, 124, 231, 0.22);
+    }
+  }
+  &.cyan {
+    .wrapperIcon {
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)),
+        linear-gradient(0deg, rgba(42, 227, 192, 0.1), rgba(42, 227, 192, 0.1));
+    }
+  }
+  &.pink {
+    .wrapperIcon {
+      background: rgba(244, 105, 255, 0.14);
+    }
+  }
+  &.gold {
+    .wrapperIcon {
+      background: rgba(255, 231, 105, 0.14);
+      .icon {
+        width: 30px;
+      }
+    }
+  }
+}

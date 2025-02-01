@@ -1,0 +1,22 @@
+.chargeButton {
+  position: relative;
+  z-index: 1;
+  width: 285px;
+  height: 58px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin: 0 auto 76px;
+  background-image: url('./btn-active-icon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .text {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .lightningIcon {
+    width: 24px;
+  }
+}
