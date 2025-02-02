@@ -11,17 +11,16 @@
     <div id="root"></div>
     <script>
       const tg = window.Telegram.WebApp
+
+      const isDesktop = tg.platform === 'weba' || tg.platform === 'macos' || tg.platform === 'tdesktop'
+
       tg.ready()
       tg.expand()
       tg.disableVerticalSwipes()
       tg.setBackgroundColor('#090A0E')
       const version8 = tg.isVersionAtLeast('8.0')
-      if (tg) {
-        const userLanguage = tg.initDataUnsafe.user.language_code
-      }
 
-
-      if (version8) {
+      if (version8 && !isDesktop) {
         tg.requestFullscreen()
         tg.lockOrientation()
       }
